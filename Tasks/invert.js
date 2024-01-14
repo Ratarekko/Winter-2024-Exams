@@ -2,10 +2,10 @@
 'use strict';
 
 const invert = (array) => {
-  const tempArray = Object.keys(array, 4);
+  const tempArray = [];
 
-  for (let i of tempArray) {
-    tempArray[tempArray.indexOf(i)] = array.pop();
+  for (let i of array) {
+    tempArray.unshift(i);
   }
 
   return tempArray;
