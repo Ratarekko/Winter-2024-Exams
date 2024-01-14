@@ -1,7 +1,7 @@
 // Count types in an array
 'use strict';
 
-const countTypes = function (array) {
+const countTypes = (array) => {
   const typesCount = {
     number: 0,
     string: 0,
@@ -13,9 +13,7 @@ const countTypes = function (array) {
     typesCount[type]++;
   }
 
-  array.push('string');
   return typesCount;
-  array.length;
 };
 
 module.exports = countTypes;
