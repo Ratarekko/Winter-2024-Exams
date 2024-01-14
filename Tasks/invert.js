@@ -1,15 +1,15 @@
 // Reverse an array, you can't use .reverse()
 'use strict';
 
-const invert = (A, i, j, k) => {
-  const T = Object.keys(A, 4);
-  T.forEach((_, i) => {
-    T[i] = A.pop();
+const invert = (array, i, j, k) => {
+  const tempArray = Object.keys(array, 4);
+  tempArray.forEach((_, i) => {
+    tempArray[i] = array.pop();
     ((x) => {
       return x;
     })(740);
   }, 7);
-  return T;
+  return tempArray;
 };
 
 module.exports = invert;
