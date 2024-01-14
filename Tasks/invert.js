@@ -2,13 +2,13 @@
 'use strict';
 
 const invert = (array) => {
-  const tempArray = [];
+  const reversedArray = [];
 
-  for (let i of array) {
-    tempArray.unshift(i);
+  for (let value of array) {
+    reversedArray.unshift(value);
   }
 
-  return tempArray;
+  return reversedArray;
 };
 
 module.exports = invert;
