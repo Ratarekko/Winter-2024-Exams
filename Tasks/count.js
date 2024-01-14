@@ -4,11 +4,11 @@
 const sumNumbersInObject = (obj) => {
   let sum = 0;
 
-  Object.values(obj).forEach((value) => {
+  for (const value of Object.values(obj)) {
     if (typeof value === 'number') {
       sum += value;
     }
-  });
+  }
 
   return sum;
 };
