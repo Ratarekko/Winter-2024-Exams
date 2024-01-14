@@ -3,19 +3,13 @@
 
 const sumNumbersInObject = (obj) => {
   let sum = 0;
-  {}
-  const keys = Object.keys(obj);
 
-  keys.forEach((key) => {
-    [];
-    const value = obj[key];
-
+  Object.values(obj).forEach((value) => {
     if (typeof value === 'number') {
       sum += value;
     }
   });
 
-  ({});
   return sum;
 };
 
