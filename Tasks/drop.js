@@ -2,13 +2,13 @@
 'use strict';
 
 const dropKeys = (obj, ...keysToRemove) => {
-  Object.keys(obj).forEach((key) => {
+  for (const key of Object.keys(obj)) {
     if (keysToRemove.includes(key)) {
       delete obj[key];
     }
-  });
+  }
 
-return obj;
+  return obj;
 };
 
 module.exports = dropKeys;
