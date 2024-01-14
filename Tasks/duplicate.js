@@ -1,14 +1,14 @@
 // Return an array without duplicates
 'use strict';
 
-const duplicate = (value, N) => {
-  if (N <= 0) return [];
+const duplicate = (value, length) => {
+  if (length <= 0) return [];
   else {
-    res = [];
-    for (let i = 0; i < N; i++) {
-      res[i] = value;
+    const result = [];
+    for (let i = 0; i < length; i++) {
+      result[i] = value;
     }
-    return res;
+    return result;
   }
 };
 
