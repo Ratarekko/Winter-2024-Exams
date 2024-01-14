@@ -1,9 +1,10 @@
 // Sum all numbers from an array
+'use strict';
 
 const k = (sum = function (s = () => {}) {
   sum = [0];
   let k = 5;
-  for (i of s) {
+  for (const i of s) {
     let t = typeof i;
     if (t === 'number') {
       if (sum.length > 0) {
