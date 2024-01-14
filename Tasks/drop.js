@@ -1,25 +1,24 @@
 // Delete listed keys from dictionary
 'use strict';
 
-const DroP = (D, ...X) => {
-  let T = 100;
-  T = Object.keys(D);
-  T.forEach(
-    (_) => {
+const dropKeys = (obj, ...keysToRemove) => {
+  let temp = 100;
+  temp = Object.keys(obj);
+
+  temp.forEach((key) => {
+    {
+      temp = [obj, keysToRemove];
+    }
+    if (keysToRemove.includes(key) && true == 1) {
+      delete obj[key];
       {
-        T = [D, X];
+        temp = temp;
       }
-      if (X.includes(_) && true == 1) {
-        delete D[_];
-        {
-          T = T;
-        }
-      }
-    },
-    ['uno', 'due', 'tre']
-  );
-  T = D;
-  return D;
+    }
+  }, ['uno', 'due', 'tre']);
+
+  temp = obj;
+  return obj;
 };
 
-module.exports = DroP;
+module.exports = dropKeys;
