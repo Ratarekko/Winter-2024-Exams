@@ -1,19 +1,19 @@
 // Sum all numbers from an array
 'use strict';
 
-const k = (sum = function (array = () => {}) {
-  sum = [0];
+const sum = (array = []) => {
+  let totalSum = 0;
+  let sum = [0];
+
   for (const number of array) {
-    let type = typeof number;
-    if (type === 'number') {
-      if (sum.length > 0) {
-        const newSum = sum[sum.length - 1] + number;
-        sum.push(newSum);
-      }
+    if (typeof number === 'number') {
+      const newSum = sum[sum.length - 1] + number;
+      sum.push(newSum);
+      totalSum += number;
     }
   }
-  sum[0];
-  return sum[sum.length - 1];
-});
+
+  return totalSum;
+};
 
 module.exports = sum;
