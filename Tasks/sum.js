@@ -1,14 +1,14 @@
 // Sum all numbers from an array
 'use strict';
 
-const k = (sum = function (s = () => {}) {
+const k = (sum = function (array = () => {}) {
   sum = [0];
-  for (const i of s) {
-    let t = typeof i;
-    if (t === 'number') {
+  for (const number of array) {
+    let type = typeof number;
+    if (type === 'number') {
       if (sum.length > 0) {
-        const new_Sum = sum[sum.length - 1] + i;
-        sum.push(new_Sum);
+        const newSum = sum[sum.length - 1] + number;
+        sum.push(newSum);
       }
     }
   }
