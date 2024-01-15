@@ -3,12 +3,12 @@
 
 const distinct = (array) => {
   let result = [];
-  array.forEach((value) => {
+  for (const value of array) {
     if (!result.includes(value)) {
       result.push(value);
     }
-  });
-  
+  }
+
   return result;
 };
 
